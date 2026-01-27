@@ -19,3 +19,67 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+# Contributing Guide
+
+Thanks for your interest in contributing to this project!  
+This repository is licensed under the MIT License and contributions are welcome.
+
+---
+
+## Project Goals
+
+This project is a cross-platform, cloud-based resume and career workflow tool designed to:
+
+- Run fully in the browser (Android, iOS, desktop)
+- Avoid local OS dependencies
+- Integrate with Google Drive, AI review systems, and LinkedIn
+- Remain simple, modular, and forward-compatible
+
+---
+
+## Contribution Principles
+
+Please follow these principles when contributing:
+
+- Keep the project **platform-agnostic**
+- Do not introduce dependencies that require local terminals on user devices
+- Prefer clarity over cleverness
+- Avoid breaking the defined user flow
+- Keep frontend and backend concerns separated
+
+---
+
+## Repository Structure
+
+### Frontend (Remix)
+- Hosted on Vercel
+- Handles UI flow, validation, and user interaction
+- No secrets or API keys in frontend code
+
+### Backend (FastAPI)
+- Hosted on Render
+- Handles OAuth, file processing, AI integration, and persistence
+- Secrets must be stored in environment variables
+
+---
+
+## Development Workflow (Browser-First)
+
+This project supports **browser-only development**.
+
+Recommended workflow:
+1. Edit files directly in GitHub (web or mobile app)
+2. Commit changes to a feature branch or main
+3. Vercel / Render will auto-build and deploy
+4. Test via the deployed URL
+
+Local development is optional, not required.
+
+---
+
+## Coding Standards
+
+### Frontend
+-
